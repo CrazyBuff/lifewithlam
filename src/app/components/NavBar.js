@@ -6,13 +6,13 @@ import image from '../../images/sheep_mascot.png';
 export default function NavBar() {
     return (
         <div className="navbar-container">
-            <div className="navbar-icon">
-                <Link href={'/'} >
-                <Image src={image} width={100}/>
-                </Link>
-                </div>
+    
             <div className='navbar-container-inner'>
-            
+                <div className="navbar-icon">
+                    <Link href={'/'} >
+                    <Image src={image} width={100}/>
+                    </Link>
+                </div>
                 <ul className='navbar-items'>
                     <li>
                         <Link href={'/discover'} style={{ textDecoration: "none", color: "white" }}>DISCOVER</Link>

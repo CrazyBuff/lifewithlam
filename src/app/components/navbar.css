@@ -8,13 +8,15 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    
+    border-bottom: 1px solid #fff ;
+
 }
 
 .navbar-icon {
     position: absolute;
-    left: 20%;
+    left: 12.5%;
 }
+
 
 .navbar-container-inner {
     display: flex;
