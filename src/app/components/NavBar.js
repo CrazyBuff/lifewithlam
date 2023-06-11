@@ -18,7 +18,7 @@ export default function NavBar() {
                         <Link href={'/discover'} style={{ textDecoration: "none", color: "white" }}>DISCOVER</Link>
                     </li>
                     <li>
-                        <Link href={'/about'} style={{ textDecoration: "none", color: "white" }}>about</Link>
+                        <Link href={'/about'}><Link href={'/about'} style={{ textDecoration: "none", color: "white" }}>about</Link></Link>
                     </li>
                     <li>
                         <Link href={'/merch'} style={{ textDecoration: "none", color: "white" }}>merch</Link>
