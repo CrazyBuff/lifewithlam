@@ -16,8 +16,9 @@
 
 .navbar-icon {
     position: absolute;
-    left: 20%;
+    left: 12.5%;
 }
+
 
 .navbar-container-inner {
     display: flex;
