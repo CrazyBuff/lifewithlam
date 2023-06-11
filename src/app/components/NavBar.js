@@ -1,6 +1,7 @@
 import styles from './navbar.css';
 import Image from 'next/image';
 import image from '../../images/sheep_mascot.png';
+import Link from 'next/link';
 
 export default function NavBar() {
     return (
@@ -13,7 +14,7 @@ export default function NavBar() {
                     DISCOVER
                 </li>
                 <li>
-                    ABOUT
+                    <Link href={'/about'}>ABOUT</Link>
                 </li>
                 <li>
                     MERCH
