@@ -1,8 +1,31 @@
 .shit-tester {
-    margin-top: 10%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    left: 29.8%;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+    font-family: 'hit-and-run';
+    font-size: 37px;
+}
+
+.title {
+    box-sizing: content-box;
+    width: 39%;
+}
+
+.text-wrapper {
+    
+    font-family: "lato";
+    font-size: 1.5rem;
     
 }
 
-.about-image {
-    max-width: 300%;
+html {
+    overflow: auto;
 }
