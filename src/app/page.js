@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <NavBar />
       <div> Hello World</div>
-      <Link href="/about">Go to About</Link>
+      <Link href="/about" >Go to About</Link>
     </>
   )
 }
