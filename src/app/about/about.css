@@ -6,22 +6,22 @@
 
 .title {
     position: relative;
-    left: 29.8%;
-    padding: 10px;
-    border: 10px;
-    margin: 10px;
+    left: 25%;
+    padding: 1%;
+    border: 1%;
+    margin: 0%;
     font-family: 'hit-and-run';
     font-size: 37px;
 }
 
 .title {
     box-sizing: content-box;
-    width: 39%;
+    width: 48%;
 }
 
 .text-wrapper {
     
-    font-family: "lato";
+    font-family: "Lato";
     font-size: 1.5rem;
     
 }

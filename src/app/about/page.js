@@ -7,7 +7,7 @@ export default function About() {
     return (
             <div>
                 <div className="shit-tester">
-                    <Image src={image} width={750} ></Image>
+                    <Image src={image} width={900} ></Image>
                     
                 </div>
 
@@ -15,8 +15,9 @@ export default function About() {
                 <div className="title"> 
                 ABOUT ME 
                 <hr></hr>
+                
                 <p className="text-wrapper">
-                    Jadyn Lam is a 21-year-old Australian born chinky person that has grown up following life to the rulebook. 
+                    Jadyn Lam is a 21-year-old Australian born chinky jew person that has grown up following life to the rulebook. 
                     This rulebook dictated the way that he thought about life, that was to: finish high school with a stellar ATAR, 
                     attend a prestigious university and make a living from there. Quickly realising that this was not the case, 
                     Jadyn reignited the ‘Life With Lam’ podcast - a small hobby that was created at the ripe age of 16 years old. 
@@ -40,7 +41,7 @@ export default function About() {
                 What is “Life With Lam”?
                 <hr></hr>
                 <p className="text-wrapper">
-                Hosted by Jadyn Chun Kit Lam, "Life With Lam" is a podcast that aims to shed light towards the vast opportunities, 
+                Hosted by Jadyn Chun Kit How Yang Lam, "Life With Lam" is a podcast that aims to shed light towards the vast opportunities, 
                 experiences and pathways that the world has to offer. As a student that is growing up in a system that encourages a linear, 
                 streamline, and at times, rigid, career trajectory - Life With Lam invites those that have explored their 'why' and champions 
                 their journey to where they are today. 
