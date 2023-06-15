@@ -5,5 +5,10 @@
 
 * {
   margin: 0;
-  padding: 0;
+
+}
+
+.body-content {
+
+  margin-top: 100px;
 }

@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar"
 import styles from "./about.css"
 import Image from 'next/image';
 import image from '../../images/jadyn_smiling.png';
@@ -6,12 +5,7 @@ import image from '../../images/jadyn_smiling.png';
 export default function About() {
     
     return (
-        <div>
-            
-            <NavBar />
-        
             <div>
-
                 <div className="shit-tester">
                     <Image src={image} width={750} ></Image>
                     
@@ -64,13 +58,6 @@ export default function About() {
                 
                 
            </div>
-                
-        </div>
-
-        
-        
-        
-        
     )
     
 }
