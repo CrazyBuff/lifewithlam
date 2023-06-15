@@ -10,13 +10,17 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
-    
-    
+    border-bottom: solid white 1px ;
+
 }
 
 .navbar-icon {
     position: absolute;
     left: 12.5%;
+}
+
+.nav-underline {
+    text-decoration: underline;
 }
 
 
