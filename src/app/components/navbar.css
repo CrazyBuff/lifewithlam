@@ -2,21 +2,17 @@
     position: fixed;
     top: 0;
     left: 0;
-    margin: 0;
     background-color: #ff5757;
     width: 100%;
     height: 100px;
     display:flex;
-    align-items: center;
     justify-content: center;
     z-index: 100;
     border-bottom: solid white 1px ;
-
 }
 
 .navbar-icon {
     position: absolute;
-    left: 12.5%;
 }
 
 .nav-underline {
@@ -26,15 +22,12 @@
 
 .navbar-container-inner {
     display: flex;
-    align-self: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .navbar-items {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -44,4 +37,10 @@
     font-family: 'hit-and-run';
     color: white;
     
+}
+
+.navbar-items-container {
+    position: relative;
+    margin: auto auto;
+    width: 70%;
 }

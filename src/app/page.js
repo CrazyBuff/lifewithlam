@@ -18,7 +18,9 @@ export default function Home() {
             </div>
           </div>
           <div className='hero-image-container'>
-            <Image src={image}/>
+            <Image fill objectFit='contain' src={image} placeholder='blur'
+              sizes='(max-width: 640px) 90vw, 33vw'
+            />
           </div>
         </div>
       </div>

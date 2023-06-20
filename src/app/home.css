@@ -42,13 +42,19 @@
 }
 
 .home-body-inner {
-    width: 75%;
+    width: 100%; 
+    height: 70%;
+    max-width: 1400px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap;
+
+    align-content: space-between;
 }
 
 .hero-image-container {
-    margin-top: 5%;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
 }
