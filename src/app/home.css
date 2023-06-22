@@ -5,16 +5,16 @@
     min-height: calc(100vh - 100px);
     background-color: #ff5757;
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-content {
     width: 40%;
+
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
-    margin-right: 50px;
+
     z-index: 10;
 
 }
@@ -27,7 +27,7 @@
     margin-bottom: 20px;
     font-family: hit-and-run;
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
 
@@ -44,7 +44,8 @@
 
 }
 
-.home-body-inner-container {
+.hero-container {
+    margin-top: 20px;
     width: 100%; 
     height: 70%;
     max-width: 1400px;
@@ -60,28 +61,102 @@
     position: relative;
     width: 50%;
     height: 450px;   
+    
 }
 
 .hero-image {
-    object-fit: contain;
+    object-fit:cover;
+    border: #fff5ce 10px solid;
+    border-radius: 20px;
 }
 
 .flex-element {
-
     min-width: 400px;
     max-width: 100%;
 }
 
+.hero-btns-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 97%;
+}
 
-@media (max-width: 900px) {
-    .hero-content {
-        position: absolute;
-   
+.hero-btn {
+    border: white 1px solid;
+    text-align: center;
+    padding: 13px 7%;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'hit-and-run';
+}
+
+.hero-btn-1 {
+    color:#ff5757;
+    background-color: white;
+}
+
+.hero-btn-2 {
+    color: white;
+}
+
+.home-platforms-display {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 1400px;
+}
+
+.platforms-display-title {
+    font-family: 'hit-and-run';
+    color: white;
+    margin-bottom: 8px;
+}
+
+
+.platforms-container {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.platform-logo-container {
+    position: relative;
+    height: 50px;
+    width: 500px;
+}
+
+.platform-logo-image {
+    object-fit: contain;
+}
+
+
+@media (max-width: 1100px) {
+    .home-body-inner-container {
         margin-top: 0;
-        margin-right: 0;
     }
 
-    .home-body-inner-container {
+
+    .hero-content {
+        position: absolute;
+        margin-top: 0;
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .hero-content-text p {
+        -webkit-text-stroke: 1px #532410;
+        text-align: center;
+    }
+
+    .hero-image {
+        object-fit: cover;
+        border: none;
+        border-radius: 0;
+    }
+
+    .hero-container {
         overflow: hidden;
     }
 
@@ -91,7 +166,19 @@
 
     .hero-image-container {
         width: 100%;
+        height: 500px;
         object-fit: fill;
         overflow: hidden;
+    }
+
+}
+
+@media (max-width: 450px) {
+    * {
+        font-size: 12px;
+    }
+
+    .flex-element {
+        min-width: 90%;
     }
 }
