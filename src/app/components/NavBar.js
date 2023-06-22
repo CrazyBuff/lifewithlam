@@ -4,14 +4,38 @@ import styles from './navbar.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import image from '../../images/sheep_mascot.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function NavBar() {
     const [currentSelected, setCurrentSelected] = useState(null);
+    const [menuActive, setMenuActive] = useState(true);
+
 
     const selectNav = (option) => {
         setCurrentSelected(option);
+        if (window.innerWidth <= 1100) {
+            setMenuActive(false);
+        }
     }
+
+    const toggleMenu = () => {
+        setMenuActive(!menuActive);
+    }
+
+
+    useEffect(() => {
+        const handleMobileScreen = () => {
+            if (window.innerWidth <= 1100) {
+                setMenuActive(false);
+            }
+            else {
+                setMenuActive(true);
+            }
+        }
+        
+        window.addEventListener('resize', handleMobileScreen)
+    }, [])
+
 
     return (
         <div className="navbar-container">
@@ -21,7 +45,7 @@ export default function NavBar() {
                     <div onClick={() => selectNav(null)}><Image src={image} width={100}/></div>
                     </Link>
                 </div>
-                <div className='navbar-items-container'>
+                <div className={menuActive ? 'navbar-items-container' : 'navbar-items-container-inactive'}>
                     <ul className='navbar-items'>
                         <li>
                             <Link href={'/discover'} style={{ textDecoration: "none", color: "white" }}>
@@ -57,6 +81,11 @@ export default function NavBar() {
                         </li>
                     </ul>
                 </div>
+                <a onClick={() => toggleMenu()} href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
             </div>
         </div>
     )
