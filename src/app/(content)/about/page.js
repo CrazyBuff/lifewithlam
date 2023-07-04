@@ -1,6 +1,7 @@
 import styles from "./about.css";
 import Image from 'next/image';
-import image from '../../images/jadyn_smiling.png';
+import image from '../../../images/jadyn_smiling.png';
+import RootLayout from "../../layout";
 
 export default function About() {
     

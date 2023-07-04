@@ -8,6 +8,7 @@ import itunes from '../images/itunes logo.png'
 import spotify from '../images/spotify logo.png'
 import tiktok from '../images/tiktok logo.png'
 
+
 export default function Home() {
   return (
     <div className='home-body'>
