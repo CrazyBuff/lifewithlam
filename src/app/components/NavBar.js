@@ -1,6 +1,6 @@
 'use client'
 
-import styles from './navbar.css';
+import './navbar.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import image from '../../images/sheep_mascot.png';
@@ -82,9 +82,9 @@ export default function NavBar() {
                     </ul>
                 </div>
                 <a onClick={() => toggleMenu()} href="#" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
                 </a>
             </div>
         </div>
